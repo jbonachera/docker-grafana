@@ -8,6 +8,6 @@ RUN mkdir /opt/grafana && \
 VOLUME /var/lib/grafana
 COPY custom.ini /opt/grafana/conf/custom.ini
 USER grafana
-EXPOSE 8086
+EXPOSE 3000
 WORKDIR /opt/grafana
 CMD /opt/grafana/bin/grafana-server
